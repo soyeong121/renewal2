@@ -1,0 +1,220 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul,li {
+    list-style: none;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body, html {
+    width: 100%;
+    font-family: 'GmarketSansMedium';
+}
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+/* ------------------------------------------------------- */
+/* header */
+#header { padding: 10px; }
+#header > a {
+    display: block;
+    width: 165px;
+    margin: 0 auto;
+}
+/* ------------------------------------------------------- */
+/* nav */
+#nav-container {
+    color: black;
+    transition: 0.3s ease-in;
+    height: 50px;
+}
+#nav-container::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #ddd;
+}
+#nav {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+#nav > ul > li {
+    float: left;
+    width: 171px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+#nav > ul::after {content: ""; display: block; clear: both;}
+#nav > ul > li > a {
+    display: block;
+    
+}
+#nav > ul > li > a:hover {
+    background-color: #00897a;
+    color: white;
+    font-weight: bold;
+}
+.submenu {
+    position: absolute;
+
+    top: 100%;
+    left: 0; right: 0;
+    font-size: 16px;
+
+    width: 1200px;
+    opacity: 0;
+    transition: 0.3s 0.2s;
+
+    color: black;
+}
+.submenu::after { content: ""; display: block; clear: both; }
+#submenu6 {
+    position: absolute;
+    top: 100%;
+    left: 71%; right: 0;
+    font-size : 16px;
+
+    width: 171px;
+}
+#submenu7 {
+    position: absolute;
+    top: 100%;
+    left: 86%; right: 0;
+    font-size : 16px;
+
+    width: 171px;
+}
+.submenu > li {
+    width: 171px;
+    float: left;
+}
+#nav > ul > li:hover ul { opacity: 1; }
+.submenu > li > a {
+    display: block;
+}
+.submenu > li > a:hover {
+    background-color: #00897a;
+    color: white;
+}
+/* ------------------------------------------------------- */
+/* sub-nav */
+#sub-nav {
+    width: 100%;
+    background-color: #d7d7d7;
+}
+#subNav-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 5px 0 5px 100px;
+}
+#subNav-container::after {content: ""; display: block; clear: both;}
+#subNav-container > a {
+    display: block;
+    float: left;
+}
+#subNav-container > img {
+    float: left;
+    width: 22px;
+    padding: 3px 25px 0;
+}
+#subNav-home > img {
+    width: 25px;
+}
+#subNav-text {
+    font-size: 18px;
+    line-height: 30px;
+}
+/* ------------------------------------------------------- */
+/* contents */
+#contents {
+    width: 1200px;
+    margin: 0 auto;
+}
+#contents > h2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+}
+#department-icons {
+    width: 100%;
+}
+.icon {
+    padding: 30px;
+}
+.icon::after {content: ""; display: block; clear: both;}
+.icon > a {
+    display: block;
+    float: left;
+    margin-left: 113px;
+}
+#icon1 > a:nth-child(1), #icon2 > a:nth-child(1), #icon3 > a:nth-child(1), #icon4 > a:nth-child(1), #icon5 > a:nth-child(1) {
+    margin-left: 0;
+}
+.icon > a > img {
+    width: 200px;
+    height: 200px;
+    object-fit: none;
+}
+.icon > a > p {
+    width: 200px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+
+    background-color: #465fac;
+    border-radius: 50px;
+    color: white;
+}
+/* ------------------------------------------------------- */
+/* footer */
+#footer {
+    width: 100%;
+    background-color: #ddd;
+
+    font-family: 'NotoSansKR';
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+}
+#information {
+    width: 670px;
+    margin: 0 auto;
+    padding: 10px;
+}
+#information::after {content: ""; display: block; clear: both;}
+#information > a {
+    display: block;
+    float: left;
+    padding: 10px;
+}
+#information > span {
+    float: left;
+    padding: 10px;
+}
+#footer-contents {
+    width: 950px;
+    margin: 0 auto;
+}
+#footer-contents::after {content: ""; display: block; clear: both;}
+#footer-contents > img {
+    padding: 10px 0;
+    width: 190px;
+    float: left;
+    margin-left: 100px;
+}
+#footer-contents > p {
+    float: left;
+    padding: 10px 0;
+    margin-left: 150px;
+}

@@ -1,0 +1,343 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul,li {
+    list-style: none;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body, html {
+    width: 100%;
+    font-family: 'GmarketSansMedium';
+}
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+/* ------------------------------------------------------- */
+/* header */
+#header { padding: 10px; }
+#header > a {
+    display: block;
+    width: 165px;
+    margin: 0 auto;
+}
+/* ------------------------------------------------------- */
+/* nav */
+#nav-container {
+    color: black;
+    transition: 0.3s ease-in;
+    height: 50px;
+}
+#nav-container::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #ddd;
+}
+#nav {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+#nav > ul > li {
+    float: left;
+    width: 171px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+#nav > ul::after {content: ""; display: block; clear: both;}
+#nav > ul > li > a {
+    display: block;
+    
+}
+#nav > ul > li > a:hover {
+    background-color: #00897a;
+    color: white;
+    font-weight: bold;
+}
+.submenu {
+    position: absolute;
+
+    top: 100%;
+    left: 0; right: 0;
+    font-size: 16px;
+
+    width: 1200px;
+    opacity: 0;
+    transition: 0.3s 0.2s;
+
+    color: black;
+}
+.submenu::after { content: ""; display: block; clear: both; }
+#submenu6 {
+    position: absolute;
+    top: 100%;
+    left: 71%; right: 0;
+    font-size : 16px;
+
+    width: 171px;
+}
+#submenu7 {
+    position: absolute;
+    top: 100%;
+    left: 86%; right: 0;
+    font-size : 16px;
+
+    width: 171px;
+}
+.submenu > li {
+    width: 171px;
+    float: left;
+}
+#nav > ul > li:hover ul { opacity: 1; }
+.submenu > li > a {
+    display: block;
+}
+.submenu > li > a:hover {
+    background-color: #00897a;
+    color: white;
+}
+/* ------------------------------------------------------- */
+/* sub-nav */
+#sub-nav {
+    width: 100%;
+    background-color: #d7d7d7;
+}
+#subNav-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 5px 0 5px 100px;
+}
+#subNav-container::after {content: ""; display: block; clear: both;}
+#subNav-container > a {
+    display: block;
+    float: left;
+}
+#subNav-container > img {
+    float: left;
+    width: 22px;
+    padding: 3px 25px 0;
+}
+#subNav-home > img {
+    width: 25px;
+}
+#subNav-text {
+    font-size: 18px;
+    line-height: 30px;
+}
+/* ------------------------------------------------------- */
+/* sub-banner */
+#sub-banner {
+    background-image: url(../images/subMain_banner.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 60px 0;
+
+    font-family: 'NotoSansKR';
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+    color: white;
+}
+#subBanner-contents {
+    width: 1200px;
+    margin: 0 auto;
+}
+#subBanner-contents::after {content: ""; display: block; clear: both;}
+#banner-title {
+    float: left;
+    margin-top: 100px;
+    margin-left: 160px;
+}
+#banner-text {
+    float: left;
+    padding: 40px;
+    margin-left: 170px;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+#banner-title > h2 {
+    width: 230px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 65px;
+}
+#banner-title > p {
+    width: 230px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+#banner-text > p:nth-child(1) {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 37px;
+}
+#banner-text > p:nth-child(1) > span {
+    background-color: #465fac;
+    line-height: 30px;
+    padding: 5px;
+}
+/* ------------------------------------------------------- */
+/* sub-container */
+#sub-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+#doctor-title, #clinic-title {
+    width: 1060px;
+    margin: 50px 140px;
+    position: relative;
+}
+#doctor-title > img, #clinic-title > img {
+    width: 70px;
+    float: left;
+}
+#doctor-title > h2, #clinic-title > h2 {
+    font-size: 25px;
+    line-height: 70px;
+    margin-left: 40px;
+    float: left;
+}
+#doctor-title > h2::after, #clinic-title > h2::after {
+    content: "";
+    position: absolute;
+    width: 750px;
+    top: 30px;
+    right: 0;
+    border: 1px solid black;
+}
+#doctor-title::after, #clinic-title::after {content: ""; display: block; clear: both;}
+/* sub-container -- sub-container1 */
+#doctor1, #doctor2 {
+    margin-left: 140px;
+    margin-bottom: 100px;
+}
+#doctor1::after, #doctor2::after { content: ""; display: block; clear: both; }
+#doctor1 > img, #doctor2 > img {
+    float: left;
+}
+#doctor1-text, #doctor2-text {
+    float: left;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+#doctor1-text::after, #doctor2-text::after { content: ""; display: block; clear: both; }
+#doctor1-text > p:nth-child(1), #doctor2-text > p:nth-child(1) {
+    color: #465fac;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#doctor1-text > p:nth-child(3), #doctor2-text > p:nth-child(3) {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+#doctor1-text > p:nth-child(4), #doctor2-text > p:nth-child(4) {
+    font-size: 18px;
+    line-height: 20px;
+}
+.name {margin-bottom: 30px;}
+.name::after { content: ""; display: block; clear: both; }
+.name > p {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 35px;
+    float: left;
+}
+.name > span {
+    float: left;
+    font-size: 20px;
+    margin-top: 12px;
+    margin-left: 18px;
+}
+#doctor1-text > button, #doctor2-text > button {
+    width: 230px;
+    font-size: 23px;
+    color: white;
+    background-color: #18387f;
+    line-height: 50px;
+    margin-top: 50px;
+}
+/* sub-container -- sub-container2 */
+#clinic {
+    margin-left: 140px;
+    margin-bottom: 100px;
+}
+#clinic::after{ content: ""; display: block; clear: both; }
+#clinic > li {
+    float: left;
+    margin-left: 68px;
+}
+#clinic > li:nth-child(1) {
+    margin-left: 0;
+}
+#clinic > li > img {
+    width: 300px;
+    margin-bottom: 50px;
+}
+#clinic > li > p:nth-child(2) {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+#clinic > li > p:nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 25px;
+    text-align: center;
+}
+/* ------------------------------------------------------- */
+/* footer */
+#footer {
+    width: 100%;
+    background-color: #ddd;
+
+    font-family: 'NotoSansKR';
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+}
+#information {
+    width: 670px;
+    margin: 0 auto;
+    padding: 10px;
+}
+#information::after {content: ""; display: block; clear: both;}
+#information > a {
+    display: block;
+    float: left;
+    padding: 10px;
+}
+#information > span {
+    float: left;
+    padding: 10px;
+}
+#footer-contents {
+    width: 950px;
+    margin: 0 auto;
+}
+#footer-contents::after {content: ""; display: block; clear: both;}
+#footer-contents > img {
+    padding: 10px 0;
+    width: 190px;
+    float: left;
+    margin-left: 100px;
+}
+#footer-contents > p {
+    float: left;
+    padding: 10px 0;
+    margin-left: 150px;
+}
