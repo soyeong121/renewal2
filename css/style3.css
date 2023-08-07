@@ -157,11 +157,13 @@ button {
     float: left;
     margin-top: 100px;
     margin-left: 160px;
+    width: 300px;
 }
 #banner-text {
     float: left;
+    width: 570px;
     padding: 40px;
-    margin-left: 170px;
+    margin-left: 80px;
     font-size: 20px;
     line-height: 1.2;
     font-weight: 400;
@@ -278,13 +280,16 @@ button {
 #clinic::after{ content: ""; display: block; clear: both; }
 #clinic > li {
     float: left;
-    margin-left: 68px;
+    margin-left: 78px;
+    width: 300px;
 }
 #clinic > li:nth-child(1) {
     margin-left: 0;
 }
 #clinic > li > img {
     width: 300px;
+    height: 300px;
+    object-fit: cover;
     margin-bottom: 50px;
 }
 #clinic > li > p:nth-child(2) {
@@ -293,8 +298,7 @@ button {
     font-weight: bold;
 }
 #clinic > li > p:nth-child(3) {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 18px;
     margin-top: 20px;
     line-height: 25px;
     text-align: center;
