@@ -208,7 +208,8 @@ button {
     left: 0;
 }
 #container2 > ul > li {
-    width: 33.33%;
+    /* width: 33.33%; */
+    width: 1200px;
     float: left;
 }
 #container2 > ul::after {content: ""; display: block; clear: both;}
@@ -272,7 +273,7 @@ button {
     font-weight: 500;
 }
 #information {
-    width: 670px;
+    width: 710px;
     margin: 0 auto;
     padding: 10px;
 }
